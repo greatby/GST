@@ -163,7 +163,9 @@ const Navbar = () => {
       className="fixed z-[9999] w-full border-b border-solid border-b-[#11110d1a] bg-[#ffffffa8] px-5 backdrop-blur-[3px]"
     >
       <div className="flex flex-wrap md:flex-nowrap justify-between items-center p-4">
-        <div className="text-xl font-bold">GST</div>
+        <div className="text-xl font-bold">
+          <img src="/public/images/GST_Logo.PNG" alt="gst" className="w-[120px] h-auto"/>
+        </div>
         <button
           className="md:hidden block"
           onClick={() => setMobileOpen(!mobileOpen)}
