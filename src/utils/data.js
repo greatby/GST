@@ -103,3 +103,47 @@ should be dedicating to innovation, sales, and growing your business.`,
 business-specific problem.`,
   },
 ]
+
+
+export const caseStudies = [
+  {
+    img: "https://placehold.co/600x400?text=Image+1",
+    title: "How Strike Graph Combined Payroll, HR, and Talent",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+2",
+    title: "How OpenWorks Reduced Manual Work by 25%",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+3",
+    title: "How LTSE Automated Its 75-Step Onboarding Process",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+4",
+    title: "Another Great Case Study Here",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+5",
+    title: "And Another One",
+  },
+   {
+    img: "https://placehold.co/600x400?text=Image+1",
+    title: "How Strike Graph Combined Payroll, HR, and Talent",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+2",
+    title: "How OpenWorks Reduced Manual Work by 25%",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+3",
+    title: "How LTSE Automated Its 75-Step Onboarding Process",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+4",
+    title: "Another Great Case Study Here",
+  },
+  {
+    img: "https://placehold.co/600x400?text=Image+5",
+    title: "And Another One",
+  },
+];

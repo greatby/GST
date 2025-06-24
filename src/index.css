@@ -80,3 +80,12 @@
   flex-grow: 1;
   background-color: #ffe4e6;
 }
+
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

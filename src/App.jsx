@@ -1,3 +1,4 @@
+import CaseStudyCarousel from "./components/CaseStudyCarousel";
 import Footer from "./components/footer";
 import GSTCards from "./components/GSTCards";
 import HorizontalCardSlider from "./components/GstCardSlider";
@@ -8,7 +9,7 @@ import FeatureTabs from "./components/showcase";
 import SuiteCards from "./components/suiteCards";
 import TestimonialAccordion from "./components/testimonialAccordian";
 import VerticalCarousel from "./components/verticalCarousel";
-import { gridOne,gridTwo,gridThree } from "./utils/data";
+import { caseStudies } from "./utils/data";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <CallToActionSection />
       <VerticalCarousel />
      <FeatureTabs />
+     <CaseStudyCarousel data={caseStudies}/>
       <Footer />
     </div>
   );
