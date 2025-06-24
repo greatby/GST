@@ -4,6 +4,7 @@ import HorizontalCardSlider from "./components/GstCardSlider";
 import GstPainPointsSlider from "./components/GstCardSlider";
 import CallToActionSection from "./components/hero";
 import Navbar from "./components/navbar";
+import FeatureTabs from "./components/showcase";
 import SuiteCards from "./components/suiteCards";
 import TestimonialAccordion from "./components/testimonialAccordian";
 import VerticalCarousel from "./components/verticalCarousel";
@@ -14,31 +15,8 @@ export default function App() {
     <div>
       <Navbar />
       <CallToActionSection />
-      <GSTCards />
-      <HorizontalCardSlider
-        title={
-          "The endless cycle of deadlines and documentation that takes you away from your real work."
-        }
-
-        cards={gridOne}
-      />
-      <HorizontalCardSlider
-        title={
-          "The rules seem to constantly change, leaving you second-guessing critical business decisions."
-        }
-
-        cards={gridTwo}
-      />
-      <HorizontalCardSlider
-        title={
-          "The practical, day-to-day issues that drain your energy and resources."
-        }
-
-        cards={gridThree}
-      />
-      {/* <VerticalCarousel />
-      <SuiteCards/>
-      <TestimonialAccordion /> */}
+      <VerticalCarousel />
+     <FeatureTabs />
       <Footer />
     </div>
   );

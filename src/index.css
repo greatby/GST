@@ -14,3 +14,69 @@
 .animate-scroll-y {
   animation: scrollY 10s linear infinite;
 }
+
+
+:root {
+  --feature-corner: 20px;
+  --feature-gap: 4px;
+  --tab-color-background: #ffe4e6;
+  --tab-color-border: #fbcfe8;
+}
+
+.feature-tab-corners {
+  z-index: 3;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  inset: auto 0 0 0;
+  height: calc(var(--feature-corner) * 2);
+  margin: 0 calc(var(--feature-corner) * -1);
+}
+
+.feature-tab-corner {
+  width: var(--feature-corner);
+  height: var(--feature-corner);
+  background-image: radial-gradient(
+    circle at 0 0,
+    white calc(var(--feature-corner) - 2px),
+    var(--tab-color-border),
+    calc(var(--feature-corner) - 2px),
+    var(--tab-color-border),
+    var(--feature-corner),
+    var(--tab-color-background) var(--feature-corner)
+  );
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+}
+
+.feature-tab-corner.is-left {
+  top: 38px;
+  bottom: 0;
+  left: 261px;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.feature-tab-corner.is-right {
+  top: 38px;
+  bottom: 0;
+  left: 2px;
+  right: 0;
+  transform: rotate(360deg);
+}
+
+.middleContent {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+
+  width: 86%;
+  height: 25px;
+  flex-grow: 1;
+  background-color: #ffe4e6;
+}

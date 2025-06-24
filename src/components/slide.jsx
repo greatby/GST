@@ -1,4 +1,5 @@
-export default function Slide({ title, desc, image, author, bg = 'bg-white' }) {
+
+export default function Slide({ title, desc, author, image, bg = "bg-white",cards=[] }) {
   return (
     <section className={`min-h-screen w-full snap-start ${bg}`}>
       <div className="flex flex-col lg:flex-row h-full items-center justify-center gap-8 px-6 py-12 max-w-7xl mx-auto overflow-hidden">
@@ -40,16 +41,20 @@ export default function Slide({ title, desc, image, author, bg = 'bg-white' }) {
           )}
         </div>
 
-        {/* Right Column (Image) */}
-        <div className="w-full lg:w-1/2">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-[300px] sm:h-[400px] lg:h-full object-cover rounded-xl"
-          />
+        {/* Right Column – Cards */}
+        <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {cards.map((point, i) => (
+            <div
+              key={i}
+              className="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition"
+            >
+              <h4 className="font-semibold text-lg mb-2">{point.title}</h4>
+              <p className="text-sm text-gray-600">{point.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
