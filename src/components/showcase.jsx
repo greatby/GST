@@ -1,19 +1,18 @@
-
-import clsx from 'clsx'
-import { AnimatePresence, motion } from 'framer-motion'
+import clsx from "clsx";
+import { AnimatePresence, motion } from "framer-motion";
 // import { image } from 'html2canvas/dist/types/css/types/image'
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 const cards = [
   {
-    title: 'Unified Data',
-    description: 'Pay employees and contractors in a few clicks.',
-    image: '/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp',
+    title: "Unified Data",
+    description: "Pay employees and contractors in a few clicks.",
+    image: "/images/67db42e6490940b072a7aeac_Run Payroll-p-500.webp",
     color: {
-      bg: 'bg-rose-100',
-      border: 'border-rose-200',
-      raw: '#ffe4e6',
-      stroke: '#ffe4e6',
+      bg: "bg-rose-100",
+      border: "border-rose-200",
+      raw: "#ffe4e6",
+      stroke: "#ffe4e6",
     },
     content: (
       <>
@@ -22,18 +21,33 @@ const cards = [
           Centralize employee and contractor data for easy access and
           management.
         </p>
+        <h2 className="text-2xl font-bold">Unified Data</h2>
+        <p className="mt-2 text-gray-700">
+          Centralize employee and contractor data for easy access and
+          management.
+        </p>
+        <h2 className="text-2xl font-bold">Unified Data</h2>
+        <p className="mt-2 text-gray-700">
+          Centralize employee and contractor data for easy access and
+          management.
+        </p>
+          <h2 className="text-2xl font-bold">Unified Data</h2>
+        <p className="mt-2 text-gray-700">
+          Centralize employee and contractor data for easy access and
+          management.
+        </p>
       </>
     ),
   },
   {
-    title: 'Tax Compliance',
-    description: 'Auto-calculate & file all payroll taxes.',
-    image: '/images/67db431bc50e51569725f6a0_Tax compliance.webp',
+    title: "Tax Compliance",
+    description: "Auto-calculate & file all payroll taxes.",
+    image: "/images/67db431bc50e51569725f6a0_Tax compliance.webp",
     color: {
-      bg: 'bg-yellow-100',
-      border: 'border-yellow-200',
-      raw: '#fef9c3',
-      stroke: '#fef9c3',
+      bg: "bg-yellow-100",
+      border: "border-yellow-200",
+      raw: "#fef9c3",
+      stroke: "#fef9c3",
     },
     content: (
       <>
@@ -42,20 +56,34 @@ const cards = [
           Automatically manage tax calculations, filings, and compliance
           effortlessly.
         </p>
+         <h2 className="text-2xl font-bold">Tax Compliance</h2>
+        <p className="mt-2 text-gray-700">
+          Automatically manage tax calculations, filings, and compliance
+          effortlessly.
+        </p>
+         <h2 className="text-2xl font-bold">Tax Compliance</h2>
+        <p className="mt-2 text-gray-700">
+          Automatically manage tax calculations, filings, and compliance
+          effortlessly.
+        </p>
+         <h2 className="text-2xl font-bold">Tax Compliance</h2>
+        <p className="mt-2 text-gray-700">
+          Automatically manage tax calculations, filings, and compliance
+          effortlessly.
+        </p>
       </>
     ),
   },
   {
-    title: 'Employee Self Service',
-    description: 'Reduce HR admin burden.',
-    image:
-      '/images/67db434ac50e515697262a2b_Employee self service-p-500.webp',
+    title: "Employee Self Service",
+    description: "Reduce HR admin burden.",
+    image: "/images/67db434ac50e515697262a2b_Employee self service-p-500.webp",
 
     color: {
-      bg: 'bg-blue-100',
-      border: 'border-blue-200',
-      raw: '#dbeafe',
-      stroke: '#dbeafe',
+      bg: "bg-blue-100",
+      border: "border-blue-200",
+      raw: "#dbeafe",
+      stroke: "#dbeafe",
     },
     content: (
       <>
@@ -64,19 +92,34 @@ const cards = [
           Empower employees to manage their own details, pay history, and
           documents.
         </p>
+         <h2 className="text-2xl font-bold">Employee Self Service</h2>
+        <p className="mt-2 text-gray-700">
+          Empower employees to manage their own details, pay history, and
+          documents.
+        </p>
+         <h2 className="text-2xl font-bold">Employee Self Service</h2>
+        <p className="mt-2 text-gray-700">
+          Empower employees to manage their own details, pay history, and
+          documents.
+        </p>
+         <h2 className="text-2xl font-bold">Employee Self Service</h2>
+        <p className="mt-2 text-gray-700">
+          Empower employees to manage their own details, pay history, and
+          documents.
+        </p>
       </>
     ),
   },
   {
-    title: 'Time Tracking',
-    description: 'Track, approve, and sync hours to payroll.',
-    image: '/images/67db437a17d3aaef94ed34ad_Time tracking.webp',
+    title: "Time Tracking",
+    description: "Track, approve, and sync hours to payroll.",
+    image: "/images/67db437a17d3aaef94ed34ad_Time tracking.webp",
 
     color: {
-      bg: 'bg-green-100',
-      border: 'border-green-200',
-      raw: '#dcfce7',
-      stroke: '#dcfce7',
+      bg: "bg-green-100",
+      border: "border-green-200",
+      raw: "#dcfce7",
+      stroke: "#dcfce7",
     },
     content: (
       <>
@@ -84,19 +127,31 @@ const cards = [
         <p className="mt-2 text-gray-700">
           Simplify hour tracking with smart time cards and payroll sync.
         </p>
+         <h2 className="text-2xl font-bold">Time Tracking</h2>
+        <p className="mt-2 text-gray-700">
+          Simplify hour tracking with smart time cards and payroll sync.
+        </p>
+         <h2 className="text-2xl font-bold">Time Tracking</h2>
+        <p className="mt-2 text-gray-700">
+          Simplify hour tracking with smart time cards and payroll sync.
+        </p>
+         <h2 className="text-2xl font-bold">Time Tracking</h2>
+        <p className="mt-2 text-gray-700">
+          Simplify hour tracking with smart time cards and payroll sync.
+        </p>
       </>
     ),
   },
   {
-    title: 'Integrations',
-    description: 'Connect Payroll to your favorite third-party apps.',
-    image: '/images/67db439ff5e0bea132971dd4_Integrations.webp',
+    title: "Integrations",
+    description: "Connect Payroll to your favorite third-party apps.",
+    image: "/images/67db439ff5e0bea132971dd4_Integrations.webp",
 
     color: {
-      bg: 'bg-purple-100',
-      border: 'border-purple-200',
-      raw: '#f3e8ff',
-      stroke: '#f3e8ff',
+      bg: "bg-purple-100",
+      border: "border-purple-200",
+      raw: "#f3e8ff",
+      stroke: "#f3e8ff",
     },
     content: (
       <>
@@ -104,31 +159,48 @@ const cards = [
         <p className="mt-2 text-gray-700">
           Seamlessly integrate with tools like Slack, QuickBooks, and more.
         </p>
+         <h2 className="text-2xl font-bold">Integrations</h2>
+        <p className="mt-2 text-gray-700">
+          Seamlessly integrate with tools like Slack, QuickBooks, and more.
+        </p>
+         <h2 className="text-2xl font-bold">Integrations</h2>
+        <p className="mt-2 text-gray-700">
+          Seamlessly integrate with tools like Slack, QuickBooks, and more.
+        </p>
+         <h2 className="text-2xl font-bold">Integrations</h2>
+        <p className="mt-2 text-gray-700">
+          Seamlessly integrate with tools like Slack, QuickBooks, and more.
+        </p>
+         <h2 className="text-2xl font-bold">Integrations</h2>
+        <p className="mt-2 text-gray-700">
+          Seamlessly integrate with tools like Slack, QuickBooks, and more.
+        </p>
       </>
     ),
   },
-]
+];
 
 function useMediaQuery(query) {
-  const [matches, setMatches] = useState(false)
+  const [matches, setMatches] = useState(false);
 
   useEffect(() => {
-    const media = window.matchMedia(query)
+    const media = window.matchMedia(query);
     if (media.matches !== matches) {
-      setMatches(media.matches)
+      setMatches(media.matches);
     }
-    const listener = () => setMatches(media.matches)
-    media.addEventListener('change', listener)
-    return () => media.removeEventListener('change', listener)
-  }, [matches, query])
+    const listener = () => setMatches(media.matches);
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [matches, query]);
 
-  return matches
+  return matches;
 }
 
 export default function FeatureTabs() {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const isLargeScreen = useMediaQuery('(min-width: 1200px)')
-  const activeColor = activeIndex !== -1 ? cards[activeIndex].color : { border: '', raw: '#fff' }
+  const [activeIndex, setActiveIndex] = useState(0);
+  const isLargeScreen = useMediaQuery("(min-width: 1200px)");
+  const activeColor =
+    activeIndex !== -1 ? cards[activeIndex].color : { border: "", raw: "#fff" };
 
   return (
     <section className="my-8 bg-white px-4 py-16">
@@ -138,8 +210,8 @@ export default function FeatureTabs() {
             {/* Desktop Tabs */}
             <div className="relative mb-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
               {cards.map((card, i) => {
-                const isActive = activeIndex === i
-                const color = card.color
+                const isActive = activeIndex === i;
+                const color = card.color;
 
                 return (
                   <div
@@ -148,15 +220,15 @@ export default function FeatureTabs() {
                     style={
                       isActive
                         ? {
-                            '--tab-color-background': color.raw,
-                            '--tab-color-border': color.stroke,
+                            "--tab-color-background": color.raw,
+                            "--tab-color-border": color.stroke,
                           }
                         : {}
                     }
                     className={`relative cursor-pointer rounded-[20px] border border-[#0000001c] px-4 py-3 shadow-[0px_0px_6px_#0000001c] transition-all ${
                       isActive
                         ? `z-20 -mb-4 rounded-b-none ${color.bg} border-0 shadow-none`
-                        : 'bg-white hover:shadow'
+                        : "bg-white hover:shadow"
                     }`}
                   >
                     <img
@@ -188,7 +260,7 @@ export default function FeatureTabs() {
                       </div>
                     )}
                   </div>
-                )
+                );
               })}
             </div>
 
@@ -203,21 +275,21 @@ export default function FeatureTabs() {
         ) : (
           <div className="flex flex-wrap items-start justify-between gap-4">
             {cards.map((card, i) => {
-              const isActive = activeIndex === i
-              const color = card.color
+              const isActive = activeIndex === i;
+              const color = card.color;
 
               return (
                 <div
                   key={i}
                   className={clsx(
-                    'overflow-hidden rounded-xl border transition',
+                    "overflow-hidden rounded-xl border transition",
                     color.border,
-                    'flex-1',
-                    'w-full basis-full',
-                    'md:max-w-[calc(50%-0.5rem)] md:basis-[calc(50%-0.5rem)]',
+                    "flex-1",
+                    "w-full basis-full",
+                    "md:max-w-[calc(50%-0.5rem)] md:basis-[calc(50%-0.5rem)]"
                   )}
                   style={{
-                    backgroundColor: isActive ? color.raw : 'white',
+                    backgroundColor: isActive ? color.raw : "white",
                   }}
                 >
                   <button
@@ -246,9 +318,9 @@ export default function FeatureTabs() {
                       <motion.div
                         key="content"
                         initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
+                        animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="overflow-hidden px-4 pt-2 pb-4 text-sm text-gray-700"
                       >
                         {card.content}
@@ -256,11 +328,11 @@ export default function FeatureTabs() {
                     )}
                   </AnimatePresence>
                 </div>
-              )
+              );
             })}
           </div>
         )}
       </div>
     </section>
-  )
+  );
 }
