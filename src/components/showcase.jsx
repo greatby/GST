@@ -26,12 +26,7 @@ const cards = [
           Centralize employee and contractor data for easy access and
           management.
         </p>
-        <h2 className="text-2xl font-bold">Unified Data</h2>
-        <p className="mt-2 text-gray-700">
-          Centralize employee and contractor data for easy access and
-          management.
-        </p>
-          <h2 className="text-2xl font-bold">Unified Data</h2>
+         <h2 className="text-2xl font-bold">Unified Data</h2>
         <p className="mt-2 text-gray-700">
           Centralize employee and contractor data for easy access and
           management.
@@ -56,21 +51,16 @@ const cards = [
           Automatically manage tax calculations, filings, and compliance
           effortlessly.
         </p>
-         <h2 className="text-2xl font-bold">Tax Compliance</h2>
+          <h2 className="text-2xl font-bold">Tax Compliance</h2>
+        <p className="mt-2 text-gray-700">
+          Automatically manage tax calculations, filings, and compliance
+          effortlessly.
+        </p>  <h2 className="text-2xl font-bold">Tax Compliance</h2>
         <p className="mt-2 text-gray-700">
           Automatically manage tax calculations, filings, and compliance
           effortlessly.
         </p>
-         <h2 className="text-2xl font-bold">Tax Compliance</h2>
-        <p className="mt-2 text-gray-700">
-          Automatically manage tax calculations, filings, and compliance
-          effortlessly.
-        </p>
-         <h2 className="text-2xl font-bold">Tax Compliance</h2>
-        <p className="mt-2 text-gray-700">
-          Automatically manage tax calculations, filings, and compliance
-          effortlessly.
-        </p>
+        
       </>
     ),
   },
@@ -96,17 +86,12 @@ const cards = [
         <p className="mt-2 text-gray-700">
           Empower employees to manage their own details, pay history, and
           documents.
-        </p>
-         <h2 className="text-2xl font-bold">Employee Self Service</h2>
+        </p> <h2 className="text-2xl font-bold">Employee Self Service</h2>
         <p className="mt-2 text-gray-700">
           Empower employees to manage their own details, pay history, and
           documents.
         </p>
-         <h2 className="text-2xl font-bold">Employee Self Service</h2>
-        <p className="mt-2 text-gray-700">
-          Empower employees to manage their own details, pay history, and
-          documents.
-        </p>
+        
       </>
     ),
   },
@@ -127,15 +112,10 @@ const cards = [
         <p className="mt-2 text-gray-700">
           Simplify hour tracking with smart time cards and payroll sync.
         </p>
-         <h2 className="text-2xl font-bold">Time Tracking</h2>
+          <h2 className="text-2xl font-bold">Time Tracking</h2>
         <p className="mt-2 text-gray-700">
           Simplify hour tracking with smart time cards and payroll sync.
-        </p>
-         <h2 className="text-2xl font-bold">Time Tracking</h2>
-        <p className="mt-2 text-gray-700">
-          Simplify hour tracking with smart time cards and payroll sync.
-        </p>
-         <h2 className="text-2xl font-bold">Time Tracking</h2>
+        </p>  <h2 className="text-2xl font-bold">Time Tracking</h2>
         <p className="mt-2 text-gray-700">
           Simplify hour tracking with smart time cards and payroll sync.
         </p>
@@ -159,22 +139,15 @@ const cards = [
         <p className="mt-2 text-gray-700">
           Seamlessly integrate with tools like Slack, QuickBooks, and more.
         </p>
-         <h2 className="text-2xl font-bold">Integrations</h2>
+          <h2 className="text-2xl font-bold">Integrations</h2>
         <p className="mt-2 text-gray-700">
           Seamlessly integrate with tools like Slack, QuickBooks, and more.
         </p>
-         <h2 className="text-2xl font-bold">Integrations</h2>
+          <h2 className="text-2xl font-bold">Integrations</h2>
         <p className="mt-2 text-gray-700">
           Seamlessly integrate with tools like Slack, QuickBooks, and more.
         </p>
-         <h2 className="text-2xl font-bold">Integrations</h2>
-        <p className="mt-2 text-gray-700">
-          Seamlessly integrate with tools like Slack, QuickBooks, and more.
-        </p>
-         <h2 className="text-2xl font-bold">Integrations</h2>
-        <p className="mt-2 text-gray-700">
-          Seamlessly integrate with tools like Slack, QuickBooks, and more.
-        </p>
+        
       </>
     ),
   },
@@ -198,7 +171,7 @@ function useMediaQuery(query) {
 
 export default function FeatureTabs() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const isLargeScreen = useMediaQuery("(min-width: 1200px)");
+  const isLargeScreen = useMediaQuery("(min-width: 767px)");
   const activeColor =
     activeIndex !== -1 ? cards[activeIndex].color : { border: "", raw: "#fff" };
 

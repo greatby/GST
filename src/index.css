@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  position: absolute;
+  position: relative;
   inset: auto 0 0 0;
   height: calc(var(--feature-corner) * 2);
   margin: 0 calc(var(--feature-corner) * -1);
@@ -52,34 +52,45 @@
   z-index: 1;
 }
 
-.feature-tab-corner.is-left {
-  top: 38px;
+/* .feature-tab-corner.is-left {
+  top: 50px;
   bottom: 0;
-  left: 261px;
+  left: 245px;
   right: 0;
   transform: rotate(90deg);
 }
 
 .feature-tab-corner.is-right {
-  top: 38px;
+  top: 50px;
   bottom: 0;
-  left: 2px;
+  left: -14px;
   right: 0;
   transform: rotate(360deg);
+} */
+
+
+
+.feature-tab-corner.is-left {
+  top: 50px;
+  left: 100%;
+  transform: translateX(-6px) rotate(90deg);
+}
+
+.feature-tab-corner.is-right {
+  top: 50px;
+  right: 100%;
+  transform: translateX(6px) rotate(360deg);
 }
 
 .middleContent {
   position: absolute;
-  top: 40px;
-  left: 20px;
-  right: 0;
-  bottom: 0;
-
-  width: 86%;
+  top: 44px;
+  left: 4px;
+  width: calc(100% - 8px);
   height: 25px;
-  flex-grow: 1;
-  background-color: #ffe4e6;
+  background-color: var(--tab-color-background);
 }
+
 
 
 .scrollbar-hide {
